@@ -1,0 +1,24 @@
+in_memory:
+  :adapter: in_memory
+  :log_times: true
+
+inline:
+  :adapter: inline
+  :log_times: true
+
+active_mq:
+  :adapter: active_mq
+  :log_times: true
+  :factory: org.apache.activemq.ActiveMQConnectionFactory
+  :broker_url: tcp://localhost:61616
+  #:username: myuser
+  #:password: mypassword
+
+active_mq_invm:
+  :adapter: active_mq
+  :log_times: true
+  :factory: org.apache.activemq.ActiveMQConnectionFactory
+  :broker_url: vm://qwirk?brokerConfig=xbean:../activemq.xml
+  :object_message_serialization_defered: true
+  :username: qwirk
+  :password: qwirk

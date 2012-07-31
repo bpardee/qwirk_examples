@@ -1,0 +1,7 @@
+.bundle
+.idea
+.rbenv*
+Gemfile.lock
+tmp
+bin
+vendor
