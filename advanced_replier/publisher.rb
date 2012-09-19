@@ -26,7 +26,7 @@ class Publisher
       response.on_message 'CharCount' do |hash|
         messages['CharCount'] = "returned #{hash.inspect} in #{response.msec_delta.to_i} ms"
       end
-      response.on_message 'Length', 'Reverse', 'Triple' do |val|
+      response.on_message 'Length', 'Reverse', 'Multiplication' do |val|
         messages[response.name] = "returned #{val} in #{response.msec_delta.to_i} ms"
       end
       response.on_message 'ExceptionRaiser' do |val|

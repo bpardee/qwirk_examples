@@ -9,7 +9,6 @@ if ENV['RACK_ENV'] != 'publisher'
       'S2' => {:message => "I'm S2"}
   )
   manager = Qwirk[$adapter_key].create_manager(:name => 'Worker', :persist_file => 'qwirk_persist.yml')
-  at_exit { manager.stop }
 end
 if ENV['RACK_ENV'] != 'worker'
   Rumx::Bean.root.bean_add_child(:Publisher, Publisher.new($adapter_key))

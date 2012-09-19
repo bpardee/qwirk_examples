@@ -9,5 +9,5 @@ demo:
     :min_count: 1
   Reverse:
     :min_count: 1
-  Triple:
+  Multiplication:
     :min_count: 1

@@ -13,3 +13,4 @@ end
 # Allow json and bson marshaling
 gem 'json'
 gem 'bson'
+gem 'bson_ext', :platforms => :ruby
