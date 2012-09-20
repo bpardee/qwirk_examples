@@ -7,8 +7,8 @@ if ENV['QWIRK_DEV']
     gem 'qwirk_active_mq_adapter', :path => '../qwirk_active_mq_adapter'
   end
 else
-  gem 'qwirk', '~> 0.1.0'
-  gem 'qwirk_active_mq_adapter', '~> 0.1.0', :platforms => :jruby
+  gem 'qwirk', '~> 0.2.0'
+  gem 'qwirk_active_mq_adapter', '~> 0.2.0', :platforms => :jruby
 end
 # Allow json and bson marshaling
 gem 'json'

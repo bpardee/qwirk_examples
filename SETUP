@@ -10,3 +10,6 @@ QWIRK_ADAPTER=active_mq rackup
   or for ActiveMQ invm
 QWIRK_ADAPTER=active_mq_invm rackup
 
+Note that when using jruby, you may want to do a kill <pid> on your rackup process to allow more graceful
+termination of workers than hitting cntl-c will allow.
+
