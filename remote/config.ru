@@ -1,13 +1,12 @@
 require '../setup'
-require './shared_worker'
-require './publisher'
+require '../simple/bar_worker'
+require '../simple/baz_worker'
+require '../simple/publisher'
+
+Qwirk[$adapter_key].remote = true
 
 # If we're not starting up a standalone publisher, then start up a manager
 if ENV['RACK_ENV'] != 'publisher'
-  SharedWorker.define_configs(
-      'S1' => {:message => "I'm S1", :sleep_time => 10},
-      'S2' => {:message => "I'm S2"}
-  )
   manager = Qwirk[$adapter_key].create_manager(:name => 'Worker', :persist_file => 'qwirk_persist.yml')
   jruby_setup_graceful_stop(manager)
 end

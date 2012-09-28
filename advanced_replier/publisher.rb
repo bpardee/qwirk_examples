@@ -2,7 +2,7 @@ require 'rumx'
 require 'qwirk'
 
 class Publisher
-  include Rumx::Bean
+  include ::Rumx::Bean
 
   bean_attr_reader :messages, :hash,    'Message', :hash_type => :string, :allow_write => false
 

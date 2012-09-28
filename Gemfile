@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 if ENV['QWIRK_DEV']
+  gem 'rumx', :path => '../rumx'
   gem 'qwirk', :path => '../qwirk'
   platforms :jruby do
     gem 'qwirk_jms_adapter', :path => '../qwirk_jms_adapter'

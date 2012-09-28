@@ -2,7 +2,7 @@ require 'rumx'
 require 'qwirk'
 
 class Publisher
-  include Rumx::Bean
+  include ::Rumx::Bean
 
   bean_attr_accessor :s1_count, :integer, 'Number of S1 messages sent'
   bean_attr_accessor :s2_count, :integer, 'Number of S2 messages sent'

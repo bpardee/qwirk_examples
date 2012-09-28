@@ -2,7 +2,7 @@ require 'rumx'
 require 'qwirk'
 
 class MessageInfo
-  include Rumx::Bean
+  include ::Rumx::Bean
 
   bean_attr_reader :request,  :string, 'The message that was sent'
   bean_attr_reader :response, :string, 'The response that was received'
@@ -13,7 +13,7 @@ class MessageInfo
 end
 
 class Requestor
-  include Rumx::Bean
+  include ::Rumx::Bean
 
   bean_reader :messages,  :list,   'Messages', :list_type => :bean
 

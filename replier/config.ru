@@ -8,6 +8,6 @@ if ENV['RACK_ENV'] != 'publisher'
   jruby_setup_graceful_stop(manager)
 end
 if ENV['RACK_ENV'] != 'worker'
-  Rumx::Bean.root.bean_add_child(:Requestor, Requestor.new($adapter_key))
+  ::Rumx::Bean.root.bean_add_child(:Requestor, Requestor.new($adapter_key))
 end
-run Rumx::Server
+run ::Rumx::Server

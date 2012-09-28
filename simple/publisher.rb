@@ -2,7 +2,7 @@ require 'rumx'
 require 'qwirk'
 
 class Publisher
-  include Rumx::Bean
+  include ::Rumx::Bean
 
   bean_attr_accessor :bar_count, :integer, 'Number of Bar messages sent'
   bean_attr_accessor :baz_count, :integer, 'Number of Baz messages sent'
