@@ -10,7 +10,7 @@ Refer to http://github.com/ClarityServices/qwirk for more information.
 
 ## Install:
 
-  git cline git@github.com:bpardee/qwirk_examples.git
+  git clone git@github.com:bpardee/qwirk_examples.git
   cd qwirk_examples
   bundle install
 
